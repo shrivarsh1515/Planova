@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planova</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="planova-icon.jpg">
+</head>
+<body>
+
+<div class="welcome-screen" id="welcomeScreen">
+    <h1> Welcome to <span>Planova</span></h1>
+    <p>Your smart study time manager</p>
+    <button onclick="startApp()">Get Started</button>
+</div>
+
+<div class="app hidden" id="app">
+    <h2>Add Your Study Task</h2>
+
+    <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Task Name" required>
+        <label>Start Time</label>
+        <input type="time" id="startTime" required>
+        <label>End Time</label>
+        <input type="time" id="endTime" required>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <h3>Your Tasks</h3>
+    <ul id="taskList"></ul>
+	<p>Task is simple. Be better than yesterday</p>
+</div>
+
+<audio id="alarmSound" src="rain.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
